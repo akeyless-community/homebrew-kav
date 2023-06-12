@@ -5,20 +5,20 @@
 class Kav < Formula
   desc "Kubernetes auth Akeyless Validator"
   homepage "https://github.com/akeyless-community/k8s-auth-validator"
-  version "1.2.4"
+  version "1.2.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.4/k8s-auth-validator_Darwin_arm64.tar.gz"
-      sha256 "163e455859169c50cc710686225104c16b177aebb80467feff9332c1c7a6d368"
+      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.5/k8s-auth-validator_Darwin_arm64.tar.gz"
+      sha256 "82ced8af4a3816aebcfc8ce7d75665fd37f869e20a27142b4116c0a7f11a1930"
 
       def install
         bin.install "k8s-auth-validator"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.4/k8s-auth-validator_Darwin_x86_64.tar.gz"
-      sha256 "f000f42cd42889556477c6ca8eb710ef010968d3f40f89f6651e3b93a26ff82c"
+      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.5/k8s-auth-validator_Darwin_x86_64.tar.gz"
+      sha256 "277eb144aa481b2c2987ab2dc138e81b40e175f7df0288cf825526e6ba16eabc"
 
       def install
         bin.install "k8s-auth-validator"
@@ -28,16 +28,16 @@ class Kav < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.4/k8s-auth-validator_Linux_arm64.tar.gz"
-      sha256 "6d7bd4c767e7e5ef181e524fec574103acacc5868ea4f076c1600af54be8b857"
+      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.5/k8s-auth-validator_Linux_arm64.tar.gz"
+      sha256 "1d04ecbd8159c146a9037abf81fab05ab6eb1b8ac495fa56e930109e9eaa73db"
 
       def install
         bin.install "k8s-auth-validator"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.4/k8s-auth-validator_Linux_x86_64.tar.gz"
-      sha256 "4743f10da15a2cf309ed029bc0334da8a54ca892a0c4d4b7b16b344aafb5419e"
+      url "https://github.com/akeyless-community/k8s-auth-validator/releases/download/1.2.5/k8s-auth-validator_Linux_x86_64.tar.gz"
+      sha256 "4b8ff3af0ff60c1245f29ec2c7785f3cd5a47c86ab573267e3ad7d55fa65c8c6"
 
       def install
         bin.install "k8s-auth-validator"
